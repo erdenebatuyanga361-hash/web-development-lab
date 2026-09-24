@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний Профайл - Лаборатори 02</title>
+</head>
+
+<body>
+
+    <!-- Толгой хэсэг -->
+    <header>
+        <h1>Оюутны хувийн профайл</h1>
+
+        <!-- Навигацийн цэс -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Нүүр хуудас</a></li>
+                <li><a href="#">Миний профайл</a></li>
+                <li><a href="#">Холбоо барих</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Үндсэн хэсэг -->
+    <main>
+
+        <!-- Оюутны мэдээллийн хэсэг -->
+        <article>
+            <section>
+                <h2>Оюутны мэдээлэл бөглөх</h2>
+                <p>Энэхүү формыг ашиглан өөрийн мэдээллийг үнэн зөв бөглөнө үү.</p>
+
+                <!-- Форм -->
+                <form action="#" method="post" enctype="multipart/form-data">
+
+                    <!-- 1-р хэсэг: Хувийн мэдээлэл -->
+                    <fieldset>
+                        <legend>Хувийн мэдээлэл</legend>
+
+                        <label for="studentName">Овог нэр:</label><br>
+                        <input
+                            type="text"
+                            id="studentName"
+                            name="studentName"
+                            placeholder="Ж: Дорж Батаа"
+                            minlength="2"
+                            required
+                        >
+                        <br><br>
+
+                        <label for="mail">И-мэйл хаяг:</label><br>
+                        <input
+                            type="email"
+                            id="mail"
+                            name="mail"
+                            placeholder="name@example.com"
+                            required
+                        >
+                        <br><br>
+
+                        <label for="pass">Нэвтрэх нууц үг:</label><br>
+                        <input
+                            type="password"
+                            id="pass"
+                            name="pass"
+                            minlength="6"
+                            required
+                        >
+                        <br><br>
+
+                        <label for="phoneNumber">Утасны дугаар:</label><br>
+                        <input
+                            type="tel"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            pattern="[0-9]{8}"
+                            placeholder="99112233"
+                            required
+                        >
+                        <br><br>
+
+                        <label for="birthDate">Төрсөн өдөр:</label><br>
+                        <input
+                            type="date"
+                            id="birthDate"
+                            name="birthDate"
+                            required
+                        >
+                        <br><br>
+
+                        <label>Хүйс сонгох:</label><br>
+
+                        <input
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            value="male"
+                        >
+                        <label for="male">Эрэгтэй</label>
+
+                        <input
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            value="female"
+                        >
+                        <label for="female">Эмэгтэй</label>
+
+                    </fieldset>
+
+                    <br>
+
+                    <!-- 2-р хэсэг: Сургалт ба чөлөөт цаг -->
+                    <fieldset>
+                        <legend>Сургалт ба чөлөөт цаг</legend>
+
+                        <label for="level">Суралцаж буй түвшин:</label><br>
+
+                        <select id="level" name="level" required>
+                            <option value="">-- Сонгох --</option>
+                            <option value="bachelor">Бакалавр</option>
+                            <option value="master">Магистр</option>
+                            <option value="phd">Докторант</option>
+                        </select>
+
+                        <br><br>
+
+                        <label>Сонирхдог чиглэлүүд:</label><br>
+
+                        <input
+                            type="checkbox"
+                            id="frontend"
+                            name="interests"
+                            value="frontend"
+                        >
+                        <label for="frontend">Front-end хөгжүүлэлт</label>
+                        <br>
+
+                        <input
+                            type="checkbox"
+                            id="backend"
+                            name="interests"
+                            value="backend"
+                        >
+                        <label for="backend">Back-end хөгжүүлэлт</label>
+                        <br>
+
+                        <input
+                            type="checkbox"
+                            id="design"
+                            name="interests"
+                            value="design"
+                        >
+                        <label for="design">UI/UX дизайн</label>
+
+                        <br><br>
+
+                        <label for="profilePic">Профайл зураг:</label><br>
+                        <input
+                            type="file"
+                            id="profilePic"
+                            name="profilePic"
+                            accept="image/*"
+                        >
+
+                        <br><br>
+
+                        <label for="aboutMe">Өөрийн тухай товч:</label><br>
+                        <textarea
+                            id="aboutMe"
+                            name="aboutMe"
+                            rows="4"
+                            cols="50"
+                            placeholder="Өөрийнхөө тухай товчхон бичээрэй..."
+                        ></textarea>
+
+                    </fieldset>
+
+                    <br>
+
+                    <!-- Товчлуурууд -->
+                    <button type="submit">Мэдээлэл илгээх</button>
+                    <button type="reset">Цэвэрлэх</button>
+
+                </form>
+            </section>
+        </article>
+
+        <!-- Чөлөөт цагийн сонирхол -->
+        <section>
+            <h2>Миний чөлөөт цагийн сонирхол</h2>
+
+            <ul>
+                <li>Хөгжим сонсох</li>
+                <li>Сагсан бөмбөг тоглох</li>
+                <li>Аялал жуулчлал</li>
+            </ul>
+        </section>
+
+        <!-- Хичээлийн дүнгийн хэсэг -->
+        <section>
+            <h2>Хичээлийн дүнгийн хураангуй</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Хичээлийн нэр</th>
+                        <th>Авсан дүн</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Математик</td>
+                        <td>92</td>
+                    </tr>
+
+                    <tr>
+                        <td>Англи хэл</td>
+                        <td>88</td>
+                    </tr>
+
+                    <tr>
+                        <td>Програмчлалын үндэс</td>
+                        <td>95</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- Хөл хэсэг -->
+    <footer>
+        <p>&copy; 2026 Оюутны хувийн профайл. Бүх эрх хуулиар хамгаалагдсан.</p>
+    </footer>
+
+</body>
+</html>
