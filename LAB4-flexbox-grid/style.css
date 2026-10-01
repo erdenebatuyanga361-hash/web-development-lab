@@ -1,0 +1,156 @@
+/* Бүх элементийн үндсэн тохиргоо */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Хуудасны ерөнхий дизайн */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #26334d;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #263b68, #6558c8);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+header p {
+    opacity: 0.9;
+}
+
+/* ===== NAVIGATION - FLEXBOX ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    background: white;
+    padding: 15px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #394b78;
+    font-weight: bold;
+
+    padding: 9px 18px;
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #6558c8;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ===== MAIN + SIDEBAR ===== */
+.page-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+
+    width: 92%;
+    max-width: 1200px;
+
+    margin: 35px auto;
+}
+
+/* Үндсэн хэсэг */
+main {
+    flex: 1;
+}
+
+main h2 {
+    margin-bottom: 20px;
+    color: #263b68;
+}
+
+/* ===== CSS GRID ===== */
+.card-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+/* Grid-ийн нэг card */
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+    border: 1px solid #e2e7f0;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #6558c8;
+    margin-bottom: 10px;
+}
+
+/* ===== SIDEBAR ===== */
+aside {
+    width: 260px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+aside h2 {
+    color: #263b68;
+    margin-bottom: 10px;
+}
+
+aside h3 {
+    color: #6558c8;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #263b68;
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+    margin-top: 40px;
+}
