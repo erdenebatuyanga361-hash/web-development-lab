@@ -1,0 +1,233 @@
+/* Бүх элементийн үндсэн тохиргоо */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Хуудасны ерөнхий дизайн */
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #eaf4ff, #f5efff);
+    color: #24324a;
+    min-height: 100vh;
+}
+
+/* Толгой хэсэг */
+header {
+    background: linear-gradient(135deg, #375a9e, #6c63c7);
+    color: white;
+    padding: 30px 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Гол гарчиг */
+header h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Navigation жагсаалт */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* Navigation холбоос */
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+/* Хулгана аваачих үеийн эффект */
+nav a:hover {
+    background: white;
+    color: #4f57ad;
+    transform: translateY(-2px);
+}
+
+/* Үндсэн хэсэг */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 35px auto;
+}
+/* Формын хэсэг */
+section {
+    background: white;
+    padding: 35px;
+    margin: 25px 0;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Формын гарчиг */
+section h2 {
+    color: #375a9e;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Тайлбар */
+section > p {
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+/* Fieldset буюу формын хэсгүүд */
+fieldset {
+    border: 1px solid #d7def0;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background: #f8faff;
+}
+
+/* Хэсгийн нэр */
+legend {
+    color: #4f57ad;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+/* Label */
+label {
+    font-weight: 600;
+    color: #344054;
+}
+
+/* Input, select, textarea */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+
+    font-size: 15px;
+    background: white;
+}
+
+/* Input дээр дарахад */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6c63c7;
+    box-shadow: 0 0 0 3px rgba(108, 99, 199, 0.15);
+}
+/* Profile card */
+.profile-card {
+    position: relative;
+}
+
+/* Cyber Student badge */
+.student-badge {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    background: linear-gradient(135deg, #375a9e, #6c63c7);
+    color: white;
+
+    padding: 8px 15px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+/* ===== Сонголтууд ===== */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #5b63c9;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+/* ===== Товчнууд ===== */
+button,
+input[type="submit"],
+input[type="reset"] {
+    border: none;
+    padding: 12px 24px;
+    margin: 8px 8px 8px 0;
+
+    border-radius: 12px;
+    background: linear-gradient(135deg, #375a9e, #6c63c7);
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(55, 90, 158, 0.3);
+}
+
+/* ===== Сонирхлын жагсаалт ===== */
+main ul {
+    line-height: 1.9;
+}
+
+/* ===== Хүснэгт ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid #dce3f0;
+}
+
+th {
+    background: #4f57ad;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f3f6ff;
+}
+
+tbody tr:hover {
+    background: #e9edff;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    background: #263b68;
+    color: white;
+}
