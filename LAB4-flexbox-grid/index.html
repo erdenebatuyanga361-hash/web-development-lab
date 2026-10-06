@@ -1,75 +1,124 @@
 <!DOCTYPE html>
 <html lang="mn">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lab 4 - Flexbox &amp; Grid</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Student</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<!-- Толгой хэсэг -->
-	<header>
-		<h1>Cyber Student</h1>
-		<p>Миний веб хөгжүүлэлтийн хуудас</p>
-	</header>
 
-	<!-- Navigation - Flexbox ашиглана -->
-	<nav>
-		<a href="#">Нүүр</a>
-		<a href="#">Хичээлүүд</a>
-		<a href="#">Миний тухай</a>
-		<a href="#">Холбоо барих</a>
-	</nav>
+    <header>
+        <h1>Cyber Student</h1>
+        <p>Кибер аюулгүй байдлын оюутны веб хуудас</p>
+    </header>
 
-	<!-- Үндсэн хэсэг -->
-	<div class="page-layout">
-		<main>
-			<h2>Миний хичээлүүд</h2>
-			<!-- CSS Grid ашиглах хэсэг -->
-			<section class="card-grid">
-				<article class="card">
-					<h3>💻 Программчлал</h3>
-					<p>C хэл болон программчлалын үндсийг судалж байна.</p>
-				</article>
-				<article class="card">
-					<h3>🌐 Веб зохиомж</h3>
-					<p>HTML, CSS ашиглан веб хуудас бүтээж байна.</p>
-				</article>
-				<article class="card">
-					<h3>🔐 Кибер аюулгүй байдал</h3>
-					<p>Мэдээлэл болон системийг хамгаалах үндсийг судалж байна.</p>
-				</article>
-				<article class="card">
-					<h3>🐧 Unix / Linux</h3>
-					<p>Linux үйлдлийн систем болон командуудтай ажиллаж байна.</p>
-				</article>
-				<article class="card">
-					<h3>🔑 Криптограф</h3>
-					<p>Мэдээллийг шифрлэх болон тайлах аргуудыг судалж байна.</p>
-				</article>
-				<article class="card">
-					<h3>🖧 Компьютерийн сүлжээ</h3>
-					<p>Компьютерийн сүлжээний үндсэн ойлголтуудыг судалж байна.</p>
-				</article>
-			</section>
-		</main>
+    <!-- Navigation - Flexbox -->
+    <nav>
+        <a href="#home">Нүүр</a>
+        <a href="#courses">Хичээлүүд</a>
+        <a href="#skills">Ур чадвар</a>
+        <a href="#about">Миний тухай</a>
+    </nav>
 
-		<!-- Sidebar -->
-		<aside>
-			<h2>Миний тухай</h2>
-			<p>Кибер аюулгүй байдлын чиглэлээр суралцдаг оюутан.</p>
-			<h3>Сонирхол</h3>
-			<ul>
-				<li>Кибер аюулгүй байдал</li>
-				<li>Веб хөгжүүлэлт</li>
-				<li>Технологи</li>
-			</ul>
-		</aside>
-	</div>
+    <!-- Үндсэн хэсэг -->
+    <div class="page-layout">
 
-	<!-- Footer -->
-	<footer>
-		<p>© 2026 Cyber Student | Web Design Lab 4</p>
-	</footer>
+        <main id="home">
+
+            <section class="welcome">
+                <h2>Тавтай морил 👋</h2>
+                <p>
+                    Сайн байна уу? Би кибер аюулгүй байдлын чиглэлээр суралцдаг.
+                    Энэ хуудсанд миний судалж буй хичээл болон ур чадваруудыг танилцууллаа.
+                </p>
+            </section>
+
+            <section id="courses">
+                <h2>Судалж буй хичээлүүд</h2>
+
+                <!-- CSS Grid -->
+                <div class="card-grid">
+
+                    <article class="card">
+                        <div class="icon">🌐</div>
+                        <h3>Веб зохиомж</h3>
+                        <p>
+                            HTML, CSS ашиглан веб хуудасны бүтэц болон
+                            дизайны үндсийг сурч байна.
+                        </p>
+                        <span>HTML • CSS</span>
+                    </article>
+
+                    <article class="card">
+                        <div class="icon">🔐</div>
+                        <h3>Криптограф</h3>
+                        <p>
+                            Мэдээллийг шифрлэх болон аюулгүй дамжуулах
+                            үндсэн аргуудыг судалж байна.
+                        </p>
+                        <span>Security • Crypto</span>
+                    </article>
+
+                    <article class="card">
+                        <div class="icon">💻</div>
+                        <h3>Unix / Linux</h3>
+                        <p>
+                            Linux үйлдлийн систем болон терминалын
+                            үндсэн командуудыг сурч байна.
+                        </p>
+                        <span>Linux • Terminal</span>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <h2>Миний ур чадвар</h2>
+
+                <div class="skill-list">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>C хэл</span>
+                    <span>Linux</span>
+                    <span>GitHub</span>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Sidebar -->
+        <aside id="about">
+            <div class="profile-icon">👩‍💻</div>
+
+            <h2>Миний тухай</h2>
+
+            <p><strong>Нэр:</strong> Э. Уянга</p>
+            <p><strong>Оюутны код:</strong> B251870084</p>
+            <p><strong>Мэргэжил:</strong> Кибер аюулгүй байдал</p>
+            <p><strong>Сургууль:</strong> МХТС</p>
+
+            <hr>
+
+            <h3>Сонирхол</h3>
+
+            <ul>
+                <li>Веб хөгжүүлэлт</li>
+                <li>Кибер аюулгүй байдал</li>
+                <li>Шинэ технологи</li>
+            </ul>
+
+            <div class="status">
+                💡 Одоогоор CSS Grid судалж байна
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Э. Уянга | Веб зохиомж — Лаборатори 4</p>
+    </footer>
+
 </body>
 </html>

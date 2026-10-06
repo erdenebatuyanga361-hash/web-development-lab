@@ -5,17 +5,16 @@
     padding: 0;
 }
 
-/* Хуудасны ерөнхий дизайн */
 body {
     font-family: Arial, sans-serif;
-    background: #f4f7fc;
+    background-color: #f4f7fb;
     color: #26334d;
     line-height: 1.6;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
-    background: linear-gradient(135deg, #263b68, #6558c8);
+    background: linear-gradient(135deg, #263b68, #3977a8);
     color: white;
     text-align: center;
     padding: 40px 20px;
@@ -30,127 +29,197 @@ header p {
     opacity: 0.9;
 }
 
-/* ===== NAVIGATION - FLEXBOX ===== */
+/* NAVIGATION - FLEXBOX */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 
-    background: white;
-    padding: 15px;
-
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    background-color: #244b74;
+    padding: 12px;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: #394b78;
-    font-weight: bold;
-
-    padding: 9px 18px;
-    border-radius: 20px;
-
+    padding: 8px 15px;
+    border-radius: 6px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background: #6558c8;
-    color: white;
-    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* ===== MAIN + SIDEBAR ===== */
+/* MAIN + SIDEBAR */
 .page-layout {
     display: flex;
-    align-items: flex-start;
     gap: 25px;
 
-    width: 92%;
     max-width: 1200px;
-
-    margin: 35px auto;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-/* Үндсэн хэсэг */
 main {
-    flex: 1;
+    flex: 3;
 }
 
 main h2 {
-    margin-bottom: 20px;
-    color: #263b68;
+    margin-bottom: 15px;
 }
 
-/* ===== CSS GRID ===== */
+/* WELCOME */
+.welcome {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+
+    border-left: 5px solid #3977a8;
+    border-radius: 8px;
+}
+
+/* CSS GRID */
 .card-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
 }
 
-/* Grid-ийн нэг card */
 .card {
-    background: white;
+    background-color: white;
+    padding: 22px;
 
-    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e0e5ec;
 
-    border-radius: 16px;
-    border: 1px solid #e2e7f0;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.13);
+}
 
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .card h3 {
-    color: #6558c8;
-    margin-bottom: 10px;
+    color: #244b74;
+    margin-bottom: 8px;
 }
 
-/* ===== SIDEBAR ===== */
+.card p {
+    margin-bottom: 15px;
+}
+
+.card span {
+    display: inline-block;
+
+    background-color: #e6f0fa;
+    color: #244b74;
+
+    padding: 5px 10px;
+    border-radius: 15px;
+
+    font-size: 13px;
+}
+
+/* SKILLS */
+.skills {
+    margin-top: 30px;
+}
+
+.skill-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill-list span {
+    background-color: #dceaf7;
+    color: #244b74;
+
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+/* SIDEBAR */
 aside {
-    width: 260px;
+    flex: 1;
 
-    background: white;
+    background-color: white;
+    padding: 22px;
 
-    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e0e5ec;
 
-    border-radius: 16px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+.profile-icon {
+    font-size: 40px;
+    text-align: center;
 }
 
 aside h2 {
-    color: #263b68;
-    margin-bottom: 10px;
+    text-align: center;
+    color: #244b74;
+    margin-bottom: 15px;
 }
 
 aside h3 {
-    color: #6558c8;
-    margin-top: 20px;
-    margin-bottom: 8px;
+    margin: 15px 0 8px;
 }
 
 aside ul {
     padding-left: 20px;
 }
 
-/* ===== FOOTER ===== */
+aside hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+.status {
+    margin-top: 20px;
+    padding: 10px;
+
+    background-color: #eef6fc;
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+/* FOOTER */
 footer {
-    background: #263b68;
+    background-color: #263b68;
     color: white;
 
     text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
 
-    padding: 22px;
-    margin-top: 40px;
+/* Жижиг дэлгэц */
+@media (max-width: 768px) {
+
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
 }
