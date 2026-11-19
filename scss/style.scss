@@ -1,0 +1,7 @@
+// Entry point: import original rules first, then organized SCSS.
+@use "original";
+@use "tokens";
+@use "mixins";
+@use "functions";
+@use "components";
+@use "utilities";

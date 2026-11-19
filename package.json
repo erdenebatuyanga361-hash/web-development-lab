@@ -1,0 +1,13 @@
+{
+  "name": "web-design-lab-7-scss",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "sass --no-source-map scss/style.scss style.css",
+    "build:compressed": "sass --style=compressed --no-source-map scss/style.scss style.min.css",
+    "watch": "sass --watch scss/style.scss:style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.93.0"
+  }
+}

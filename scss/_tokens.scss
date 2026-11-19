@@ -1,0 +1,16 @@
+// Design tokens: same values as Lab 6
+$bg: #faf9ff;
+$surface: #fff;
+$ink: #241a38;
+$muted: #6e6680;
+$accent: #7954d7;
+$border: #e8e0f4;
+$card-radius: 18px;
+$panel-radius: 20px;
+$breakpoints: (tablet: 850px, mobile: 580px);
+
+:root {
+  --bg: #{$bg}; --surface: #{$surface}; --ink: #{$ink};
+  --muted: #{$muted}; --accent: #{$accent}; --border: #{$border};
+  --card-radius: #{$card-radius};
+}

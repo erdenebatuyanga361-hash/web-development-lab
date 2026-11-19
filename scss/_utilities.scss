@@ -1,0 +1,7 @@
+@use "sass:map";
+// Generated utility classes with @each.
+$spaces: (0: 0, 1: 4px, 2: 8px, 3: 12px, 4: 16px);
+@each $key, $value in $spaces {
+  .u-mt-#{$key} { margin-top: $value; }
+  .u-gap-#{$key} { gap: $value; }
+}
